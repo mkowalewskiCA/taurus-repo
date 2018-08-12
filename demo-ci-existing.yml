@@ -3,7 +3,9 @@ provisioning: cloud
 
 modules:
   cloud:
-    test: Demo_CI_CA_APM
+    account: 21166  # numeric identifier can also be specified
+    workspace: FY19 Demo's
+    test: https://a.blazemeter.com/app/#/accounts/21166/workspaces/208340/projects/306614/tests/6251546
     launch-existing-test: true  # you can omit this field if your `execution` section is empty
     report-name: Demo_CI_CA_APM_Build-${BUILD_NUMBER}
   blazemeter:

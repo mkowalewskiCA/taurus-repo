@@ -1,0 +1,20 @@
+execution:
+- concurrency:
+     local: 1
+     cloud: 1
+  ramp-up: 1m
+  hold-for: 5m
+  scenario: demo-ci
+  locations: 
+     us-east-1: 1
+
+scenarios:
+  demo-ci:
+    script: CI-Guest-Checkout.jmx
+
+modules:
+  cloud:
+    account: 21166  # numeric identifier can also be specified
+    workspace: FY19 Demo's
+    test: Demo_CI_CA_APM
+    report-name: Demo_CI_Build_${BUILD_NUMBER}

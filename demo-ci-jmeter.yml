@@ -6,7 +6,7 @@ execution:
   hold-for: 5m
   scenario: demo-ci
   locations: 
-     us-east-1: 1
+     us-east-2: 1
 
 scenarios:
   demo-ci:
@@ -16,7 +16,7 @@ modules:
   cloud:
     account: 21166  # numeric identifier can also be specified
     workspace: FY19 Demo's
-    test: Demo_CI_CA_APM
+    test: 6251546
     report-name: Demo_CI_Build_${BUILD_NUMBER}
   blazemeter:
    token: 8ef1e3b9863801e0e061a0de:5773a44f8587f821bfb538866d8e4d70bf41fdbee4dd5b2bd5b0c32343c0aa56db6c7f38

@@ -7,5 +7,7 @@ modules:
     workspace: FY19 Demo's
     test: https://a.blazemeter.com/app/#/accounts/21166/workspaces/208340/projects/306614/tests/6251546
     launch-existing-test: true  # you can omit this field if your `execution` section is empty
+  module: junit-xml
+     filename: report.xml
   blazemeter:
    token: 8ef1e3b9863801e0e061a0de:5773a44f8587f821bfb538866d8e4d70bf41fdbee4dd5b2bd5b0c32343c0aa56db6c7f38
